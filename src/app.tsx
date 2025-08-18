@@ -1,25 +1,16 @@
-import { useState } from 'preact/hooks'
+import { useState, useMemo } from 'preact/hooks'
 import styles from './app.module.css'
-import actionsData from './actions.json'
-
-type Action = {
-  name: string
-  categories: string[]
-}
+import { ActionModel, type Action } from './actionModel'
 
 export function App() {
-  const [currentIndex, setCurrentIndex] = useState(0)
-  const actions = actionsData as Action[]
-
-  const handlePrevious = () => {
-    setCurrentIndex((prev) => (prev > 0 ? prev - 1 : actions.length - 1))
-  }
+  const actionModel = useMemo(() => new ActionModel(), [])
+  const [currentAction, setCurrentAction] = useState<Action>(() => 
+    actionModel.getRandomAction()
+  )
 
   const handleNext = () => {
-    setCurrentIndex((prev) => (prev < actions.length - 1 ? prev + 1 : 0))
+    setCurrentAction(actionModel.getRandomAction())
   }
-
-  const currentAction = actions[currentIndex]
 
   return (
     <div className={styles.container}>
@@ -27,13 +18,6 @@ export function App() {
         <p className={styles.actionText}>{currentAction.name}</p>
       </div>
       <div className={styles.navigation}>
-        <button 
-          onClick={handlePrevious} 
-          className={styles.button}
-          type="button"
-        >
-          Previous
-        </button>
         <button 
           onClick={handleNext} 
           className={styles.button}
