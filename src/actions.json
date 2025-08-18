@@ -1,0 +1,87 @@
+[
+  {
+    "name": "have a gum or some liquorice",
+    "categories": [
+      "general",
+      "when meeting someone for a beer/coffee",
+      "when wrapping up work",
+      "before walking the pooch"
+    ]
+  },
+  { "name": "play a mini game", "categories": ["general"] },
+  { "name": "stretch", "categories": ["general"] },
+  { "name": "pranajama", "categories": ["general"] },
+  { "name": "have a snack", "categories": ["general"] },
+  { "name": "pet Mango", "categories": ["general"] },
+  { "name": "hug Luna", "categories": ["general", "after work"] },
+  {
+    "name": "meditate for 3 minutes (in a different place)",
+    "categories": ["general"]
+  },
+  {
+    "name": "do a chore at home",
+    "categories": ["general", "when Luna leaves the house"]
+  },
+  {
+    "name": "doodle",
+    "categories": ["general", "when meeting someone for a beer/coffee"]
+  },
+  { "name": "practice the keyboard", "categories": ["general", "after work"] },
+  {
+    "name": "doodle in a tiny notebook - just draw one thing you see",
+    "categories": ["general"]
+  },
+  {
+    "name": "text a friend",
+    "categories": ["general", "when Luna leaves the house"]
+  },
+  {
+    "name": "call a friend",
+    "categories": ["general", "after work", "before walking Mango"]
+  },
+  { "name": "go to the kitchen and make a snack", "categories": ["general"] },
+  {
+    "name": "follow one step of a YT game tutorial (or a course)",
+    "categories": ["general"]
+  },
+  {
+    "name": "pick up a book and read one chapter, or just one page",
+    "categories": ["general"]
+  },
+  {
+    "name": "listen to one chapter of an audiobook",
+    "categories": ["general"]
+  },
+  { "name": "make yerba", "categories": ["general"] },
+  { "name": "practice conjugation", "categories": ["general"] },
+  {
+    "name": "read one article from the reading list",
+    "categories": ["general"]
+  },
+  {
+    "name": "get some water",
+    "categories": ["when meeting someone for a beer/coffee"]
+  },
+  {
+    "name": "go to the bathroom, just so you can leave the place, move for a second",
+    "categories": ["when meeting someone for a beer/coffee"]
+  },
+  {
+    "name": "order a snack like nuts",
+    "categories": ["when meeting someone for a beer/coffee"]
+  },
+  {
+    "name": "move, leave the current place, go",
+    "categories": ["during work"]
+  },
+  { "name": "read a chapter of a book", "categories": ["after work"] },
+  { "name": "play a game", "categories": ["after work"] },
+  { "name": "make tea", "categories": ["after work"] },
+  {
+    "name": "review one fleeting note, read it and think about it",
+    "categories": ["after work"]
+  },
+  { "name": "call my family", "categories": ["before walking Mango"] },
+  { "name": "hug Mango", "categories": ["when Luna leaves the house"] },
+  { "name": "go to the garden", "categories": ["when Luna leaves the house"] }
+]
