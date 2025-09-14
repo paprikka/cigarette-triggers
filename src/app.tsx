@@ -19,10 +19,12 @@ const fitText = (element: HTMLElement, container: HTMLElement) => {
       element.scrollHeight > container.clientHeight) &&
     fontSize > 16
   ) {
+    console.log({ fontSize });
     fontSize *= 0.95;
     element.style.fontSize = `${fontSize}px`;
   }
 };
+
 const useFitTextSize = (
   elementRef: MutableRef<HTMLElement | null>,
   containerRef: MutableRef<HTMLElement | null>,
@@ -74,19 +76,21 @@ export function App() {
   useFitTextSize(headerEl, containerEl, currentAction.name);
 
   return (
-    <div className={styles.container} ref={containerEl}>
-      <div className={styles.actionCard}>
-        <p
-          className={styles.actionText}
-          key={currentAction.name}
-          ref={headerEl}
-        >
-          {currentAction.name}
-        </p>
+    <div className={styles.container}>
+      <div className={styles.actionCardContainer} ref={containerEl}>
+        <div className={styles.actionCard}>
+          <p
+            className={styles.actionText}
+            key={currentAction.name}
+            ref={headerEl}
+          >
+            {currentAction.name}
+          </p>
+        </div>
       </div>
       <div className={styles.navigation}>
         <button onClick={handleNext} className={styles.button} type="button">
-          Next
+          OBEY
         </button>
       </div>
     </div>

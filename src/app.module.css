@@ -27,19 +27,25 @@
 }
 
 .container {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto min-content;
   gap: var(--spacing-md);
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   position: absolute;
   inset: 0;
   padding: var(--spacing-xl);
 }
 
+.actionCardContainer {
+  position: absolute;
+  inset: 2rem;
+  bottom: 6rem;
+  display: grid;
+  place-content: center;
+}
+
 .actionCard {
   text-align: center;
-  flex: 1;
   margin: 0;
   width: 100%;
   display: flex;
