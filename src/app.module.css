@@ -27,13 +27,8 @@
 }
 
 .container {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto min-content;
-  gap: var(--spacing-md);
   position: absolute;
   inset: 0;
-  padding: var(--spacing-xl);
 }
 
 .actionCardContainer {
@@ -45,8 +40,9 @@
 }
 
 .actionCard {
-  text-align: center;
   margin: 0;
+  position: absolute;
+  inset: 0;
   width: 100%;
   display: flex;
   align-items: center;
@@ -59,9 +55,8 @@
   color: var(--color-text-primary);
   font-weight: 800;
   text-align: start;
-  line-height: 0.9;
-  /* will-change: font-size; */
-  /* transition: 0.2s font-size; */
+  line-height: 1;
+  padding: 0;
 }
 
 .navigation {
@@ -69,17 +64,23 @@
   align-content: start;
   align-self: start;
   position: absolute;
-  bottom: 10px;
-  left: 10px;
+  bottom: 2rem;
+  left: 2rem;
 }
 
 .button {
-  color: white;
+  background: transparent;
   appearance: none;
   border: none;
-  background: red;
-  padding: 0 0.3em;
+  color: red;
+  padding: 0;
+  bottom: 2rem;
+  left: 2rem;
   font-size: 3rem;
   cursor: pointer;
   font-weight: 700;
+  font-family: inherit;
+  text-decoration: underline;
+  text-decoration-thickness: 0.07em;
+  /* text-transform: uppercase; */
 }

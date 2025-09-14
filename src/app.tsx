@@ -90,7 +90,7 @@ export function App() {
       </div>
       <div className={styles.navigation}>
         <button onClick={handleNext} className={styles.button} type="button">
-          OBEY
+          Again
         </button>
       </div>
     </div>

@@ -22,7 +22,8 @@
   --radius-md: 8px;
 
   /* System fonts */
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  --font-family: Arial, sans-serif;
+  font-family: var(--font-family);
   line-height: 1.5;
   font-weight: 400;
 
