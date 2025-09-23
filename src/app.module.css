@@ -95,7 +95,8 @@
   font-family: inherit;
   text-decoration: underline;
   text-decoration-thickness: 0.07em;
-  /* text-transform: uppercase; */
+  text-transform: uppercase;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 
   &:active {
     background: red;
