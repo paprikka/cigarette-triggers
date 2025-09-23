@@ -36,6 +36,11 @@ export function App() {
           disobey
         </button>
       </div>
+      <footer class={styles.footer}>
+        <a href="https://untested.sonnet.io/notes/obey" target="_blank">
+          about
+        </a>
+      </footer>
     </div>
   );
 }
