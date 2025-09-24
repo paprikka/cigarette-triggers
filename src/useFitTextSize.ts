@@ -1,4 +1,4 @@
-import { type MutableRef, useEffect } from "preact/hooks";
+import { type MutableRef, useEffect, useLayoutEffect } from "preact/hooks";
 
 export const fitText = (element: HTMLElement, container: HTMLElement) => {
   // Reset to a large font size to start
@@ -22,7 +22,7 @@ export const useFitTextSize = (
   containerRef: MutableRef<HTMLElement | null>,
   text: string,
 ) => {
-  useEffect(() => {
+  useLayoutEffect(() => {
     const element = elementRef.current;
     const container = containerRef.current;
     if (!element) return;
@@ -40,7 +40,7 @@ export const useFitTextSize = (
         if (element && container) {
           fitText(element, container);
         }
-      }, 50);
+      }, 10);
     };
 
     window.addEventListener("resize", handleResize);
