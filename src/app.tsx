@@ -37,7 +37,7 @@ export function App() {
         </button>
       </div>
       <footer class={styles.footer}>
-        <a href="https://untested.sonnet.io/notes/obey" target="_blank">
+        <a href="https://untested.sonnet.io/notes/disobey" target="_blank">
           about
         </a>
       </footer>
